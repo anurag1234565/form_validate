@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+    <style>
+      body
+      {
+        background-color: #2F4F4F;
+        color:white;
+      }
+      label>input
+      {
+          background-color:cadetblue;
+        border-radius: 10px;
+        margin:0.5em;
+        padding: 0.2em;
+      }
+
+      input[type="submit"]
+      {
+        background-color: limegreen;
+        border:none;
+        margin:0.5em;
+        padding:0.2em;
+      }
+
+      input[type="submit"]:hover
+      {
+        cursor: pointer;
+      }
+
+      form
+      {
+        border:1px solid ;
+        width:20em;
+        padding:2em;
+        margin:auto;
+        z-index: 3;
+        box-shadow: 10px 10px black;
+      }
+    </style>
+    <script src="validate.js"></script>
+	</head>
+    <body>
+		<form method="post" onsubmit="return validate(this)">
+			<center><h2>Registration Form</h2></center>
+			<label>
+				Name: <input type="text" name="fullname"/>
+			</label><br/>
+			<label>
+				Password: <input type="password" name="password"/>
+			</label><br/>
+			<label>
+				Age: <input type="text" maxlength="3" name="age"/>	
+			</label><br/>
+			<label>
+				e-mail: <input type="email" name="email"/>
+			</label><br/>
+			<label>
+				Phone: <input type="text" maxlength="10" name="phone">
+			</label><br/>
+			<input type="submit" value="Register Now" /><br/>
+		</form>
+		
+	</body>
+</html>
